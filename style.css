@@ -308,6 +308,10 @@ section {
     margin: auto 0;
 }
 
+.text-container {
+    text-align: justify;
+}
+
 /* Experience */
 #experience {
     position: relative;
