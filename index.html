@@ -1,274 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam's Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Sam</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Sam</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section-pic-container">
-            <img src="./assets/profile-pic.png" alt="Sam profile pic">
-        </div>
-        <div class="section-text">
-            <p class="section-text-p1">Hello, I'm</p>
-            <h1 class="title">Sam</h1>
-            <p class="section-text-p2">Aspiring Software Engineer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact
-                </button>
-            </div>
-            <div id="socials-container">
-                <img 
-                    src="./assets/linkedin.png" 
-                    alt="my Linkedin profile"
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/samuel-ng-95657032b/'">
-                <img 
-                    src="./assets/github.png" 
-                    alt="my Github profile"
-                    class="icon" 
-                    onclick="location.href='https://github.com/shenqjye93'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section-text-p1">Get To Know More</p>
-        <p class="title">About Me</p>
-        <div class="section-container">
-            <div class="section-pic-container">
-                <img src="./assets/about-pic.png" alt="Profile pic" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="experience icon" 
-                            class="icon"
-                            />
-                        <h3>Experience</h3>
-                        <p>Just starting <br> Full Stack Development</p>
-
-                    </div>
-                    <div class="details-container">
-                        <img 
-                            src="./assets/education.png" 
-                            alt="education icon" 
-                            class="icon"
-                            />
-                        <h3>Education</h3>
-                        <p>B.Eng.(Hons) Mechanical Engineering</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Graduating as a Mechanical Engineer and teaching in an International School has helped me developed the love for problem-solving and collaboration. 
-                        I believe over the years, I have sharpen my ability to think analytically, critically and explore creative methods in solving problems -
-                        skills that I am excited to apply to my career transiton into software engineering. I am currently developing my programming skills by building 
-                        frontend and backend projects. Outside of coding, I'm an avid Ultimate Frisbee player, where I bring my leadership, teamwork and strategic thinking
-                        to the field. I am passionate to bring my diverse skill set to take up a software engineering role. 
-                    </p>
-                </div>
-            </div>
-            <div>
-                <img 
-                    src="./assets/arrow.png" 
-                    alt="arrow icon" 
-                    class="icon arrow"
-                    onclick="location.href='./#experience'"
-                    />
-            </div>
-        </div>
-    </section>
-    <section id="experience">
-        <p class="section-text-p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/html.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/css.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/js.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/python.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/sqlite.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>SQLite</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/git.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img 
-                    src="./assets/arrow.png" 
-                    alt="arrow icon" 
-                    class="icon arrow"
-                    onclick="location.href='./#projects'"
-                />
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <p class="section-text-p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2" onclick="location.href='https://github.com/shenqjye93/fitness-tracker'">
-                            Github
-                        </button>
-                        <!-- TODO add deployed link -->
-                        <button class="btn btn-color-2" onclick="location.href='./#projects'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2" onclick="location.href='https://github.com/shenqjye93/fitness-tracker'">
-                            Github
-                        </button>
-                        <!-- TODO add deployed link -->
-                        <button class="btn btn-color-2" onclick="location.href='./#projects'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2" onclick="location.href='https://github.com/shenqjye93/portfolio'">
-                            Github
-                        </button>
-                        <!-- TODO add deployed link -->
-                        <button class="btn btn-color-2" onclick="location.href='./#projects'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img 
-                    src="./assets/arrow.png" 
-                    alt="arrow icon" 
-                    class="icon arrow"
-                    onclick="location.href='./#contact'"
-                />
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <p class="section-text-p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:shenqjye93@gmail.com">Shenqjye93@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/samuel-ng-95657032b/">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Samuel Ng. All Rights Reserved.</p>
-    </footer>
-    <script src="./script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sam's Portfolio</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./mediaqueries.css" />
+	</head>
+	<body>
+		<nav id="desktop-nav">
+			<div class="logo">Sam</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo">Sam</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+					<li><a href="#about" onclick="toggleMenu()">About</a></li>
+					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+				</div>
+			</div>
+		</nav>
+		<section id="profile">
+			<div class="section-pic-container">
+				<img src="./assets/profile-pic-3.png" alt="Sam profile pic" />
+			</div>
+			<div class="section-text">
+				<p class="section-text-p1">Hello, I'm</p>
+				<h1 class="title">Sam</h1>
+				<p class="section-text-p2">Aspiring Software Engineer</p>
+				<div class="btn-container">
+					<button
+						class="btn btn-color-2"
+						onclick="window.open('./assets/resume')"
+					>
+						Download CV
+					</button>
+					<button class="btn btn-color-1" onclick="location.href='./#contact'">
+						Contact
+					</button>
+				</div>
+				<div id="socials-container">
+					<img
+						src="./assets/linkedin.png"
+						alt="my Linkedin profile"
+						class="icon"
+						onclick="location.href='https://www.linkedin.com/in/samuel-ng-95657032b/'"
+					/>
+					<img
+						src="./assets/github.png"
+						alt="my Github profile"
+						class="icon"
+						onclick="location.href='https://github.com/shenqjye93'"
+					/>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<p class="section-text-p1">Get To Know More</p>
+			<p class="title">About Me</p>
+			<div class="section-container">
+				<div class="section-pic-container">
+					<img
+						src="./assets/about-pic.jpg"
+						alt="Profile pic"
+						class="about-pic"
+					/>
+				</div>
+				<div class="about-details-container">
+					<div class="about-containers">
+						<div class="details-container">
+							<img
+								src="./assets/experience.png"
+								alt="experience icon"
+								class="icon"
+							/>
+							<h3>Experience</h3>
+							<p>
+								Just starting <br />
+								Full Stack Development
+							</p>
+						</div>
+						<div class="details-container">
+							<img
+								src="./assets/education.png"
+								alt="education icon"
+								class="icon"
+							/>
+							<h3>Education</h3>
+							<p>B.Eng.(Hons) Mechanical Engineering</p>
+						</div>
+					</div>
+					<div class="text-container">
+						<p>
+							Graduating as a Mechanical Engineer and teaching in an
+							International School has helped me developed the love for
+							problem-solving and collaboration. I believe over the years, I
+							have sharpen my ability to think analytically, critically and
+							explore creative methods in solving problems - skills that I am
+							excited to apply to my career transiton into software engineering.
+							I am currently developing my programming skills by building
+							frontend and backend projects. Outside of coding, I'm an avid
+							Ultimate Frisbee player, where I bring my leadership, teamwork and
+							strategic thinking to the field. I am passionate to bring my
+							diverse skill set to take up a software engineering role.
+						</p>
+					</div>
+				</div>
+				<div>
+					<img
+						src="./assets/arrow.png"
+						alt="arrow icon"
+						class="icon arrow"
+						onclick="location.href='./#experience'"
+					/>
+				</div>
+			</div>
+		</section>
+		<section id="experience">
+			<p class="section-text-p1">Explore My</p>
+			<h1 class="title">Experience</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+					<div class="details-container">
+						<h2 class="experience-sub-title">Frontend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./assets/html.png"
+									alt="experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>HTML</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/css.png"
+									alt="experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>CSS</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img src="./assets/js.png" alt="experience icon" class="icon" />
+								<div>
+									<h3>JavaScript</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Backend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./assets/python.png"
+									alt="experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Python</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/fastapi.png"
+									alt="experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>FastAPI</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/sqlite.png"
+									alt="experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>SQLite</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/git.png"
+									alt="experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Git</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img
+						src="./assets/arrow.png"
+						alt="arrow icon"
+						class="icon arrow"
+						onclick="location.href='./#projects'"
+					/>
+				</div>
+			</div>
+		</section>
+		<section id="projects">
+			<p class="section-text-p1">Browse My Recent</p>
+			<h1 class="title">Projects</h1>
+			<div class="experience-details-container">
+				<div class="about-containers">
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/project-dashboard.png"
+								alt="Project 1"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Project One</h2>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2"
+								onclick="location.href='https://github.com/shenqjye93/fitness-tracker'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2"
+								onclick="location.href='https://fitness-tracker-testing.onrender.com'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/project-2.png"
+								alt="Project 1"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Project Two</h2>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2"
+								onclick="location.href='https://github.com/shenqjye93/portfolio'"
+							>
+								Github
+							</button>
+							<!-- TODO add deployed link -->
+							<button class="btn btn-color-2" onclick="location.href='./'">
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/project-misc.png"
+								alt="Project 1"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Misc. Projects</h2>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2"
+								onclick="location.href='https://learn.nextwork.org/portfolio'"
+							>
+								Projects
+							</button>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img
+						src="./assets/arrow.png"
+						alt="arrow icon"
+						class="icon arrow"
+						onclick="location.href='./#contact'"
+					/>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<p class="section-text-p1">Get in Touch</p>
+			<h1 class="title">Contact Me</h1>
+			<div class="contact-info-upper-container">
+				<div class="contact-info-container">
+					<img
+						src="./assets/email.png"
+						alt="email icon"
+						class="icon contact-icon email-icon"
+					/>
+					<p><a href="mailto:shenqjye93@gmail.com">Shenqjye93@gmail.com</a></p>
+				</div>
+				<div class="contact-info-container">
+					<img
+						src="./assets/linkedin.png"
+						alt="LinkedIn icon"
+						class="icon contact-icon"
+					/>
+					<p>
+						<a href="https://www.linkedin.com/in/samnsj/">LinkedIn</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<nav>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<p>Copyright &#169; 2025 Samuel Ng. All Rights Reserved.</p>
+		</footer>
+		<script src="./script.js"></script>
+	</body>
 </html>
